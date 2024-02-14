@@ -30,8 +30,6 @@
   justify-content: $justify;
 }
 
-// HEADER
-
 @mixin transitionSetting($transition: all 0.3s ease) {
   transition: $transition;
 }
@@ -39,4 +37,9 @@
 @mixin borderSetting($border, $radius){
   border: $border;
   border-radius: $radius;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
 }

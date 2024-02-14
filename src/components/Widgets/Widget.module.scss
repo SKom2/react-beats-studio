@@ -1,0 +1,13 @@
+@import "../../assets/styles/global";
+
+.widgets{
+  @include displaySettings($justify: space-between);
+  gap: 4px;
+  padding: 12px 10px 10px;
+  margin: 0;
+  list-style-type: none;
+
+  &__item{
+    z-index: 2;
+  }
+}
