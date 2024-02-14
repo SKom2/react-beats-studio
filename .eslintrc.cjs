@@ -36,6 +36,8 @@ module.exports = {
             }
         ],
         "react/no-children-prop": ["off"],
-        "react/jsx-filename-extension": ["off"]
+        "react/jsx-filename-extension": ["off"],
+        "react/no-array-index-key": ["off"],
+        "jsx-a11y/anchor-is-valid": ["off"]
     },
 }

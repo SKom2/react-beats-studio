@@ -1,10 +1,10 @@
 import styles from './App.module.scss';
-import HeaderOffer from './components/HeaderOffer/HeaderOffer';
+import Header from './components/Header/Header';
 
 const App = () => {
   return (
     <div className={styles.App}>
-      <HeaderOffer />
+      <Header />
     </div>
   );
 };

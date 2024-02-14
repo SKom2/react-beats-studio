@@ -1,0 +1,17 @@
+@import "../../assets/styles/global";
+
+
+.menu {
+  @include displaySettings();
+  gap: 40px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  &__item{
+    @include fontSet($fs: $fs-12);
+    color: $globalWhite;
+    opacity: .7;
+    text-decoration: none;
+  }
+}
