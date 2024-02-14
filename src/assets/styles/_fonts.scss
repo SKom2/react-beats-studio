@@ -1,0 +1,8 @@
+@import "mixins";
+
+@include font-face("Gilroy", 400, normal, "Gilroy-Regular");
+@include font-face("Gilroy", 500, normal, "Gilroy-Medium");
+@include font-face("Gilroy", 600, normal, "Gilroy-Semibold");
+@include font-face("NeuzeitGrotesk", 700, normal, "NeuzeitGro-Bol");
+@include font-face("NeuzeitGrotesk", 900, normal, "NeuzeitGroCon-Bla");
+@include font-face("NeuzeitGrotesk", 950, normal, "NeuzeitGroExt-Bla");

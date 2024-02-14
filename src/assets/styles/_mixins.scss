@@ -1,0 +1,42 @@
+@import "variables";
+
+@mixin font-face($font-family, $font-weight, $font-style, $file-name) {
+  @font-face {
+    font-family: $font-family;
+    src: url("../fonts/#{$file-name}.ttf") format('truetype'),
+    url("../fonts/#{$file-name}.woff") format('woff'),
+    url("../fonts/#{$file-name}.woff2") format('woff2');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@mixin fontSet($fontFamily: $mainTextFont, $fontSize: $fs-14, $fontWeight: $fw-400, $lineHeight: normal, $fontStyle: normal) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  font-style: $fontStyle;
+}
+
+@mixin theme($bg: $globalWhite, $color: $primeText) {
+  color: $color;
+  background-color: $bg;
+}
+
+@mixin displaySettings($display: flex, $align: center, $justify: center) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// HEADER
+
+@mixin transitionSetting($transition: all 0.3s ease) {
+  transition: $transition;
+}
+
+@mixin borderSetting($border, $radius){
+  border: $border;
+  border-radius: $radius;
+}
