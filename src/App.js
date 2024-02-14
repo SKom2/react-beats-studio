@@ -1,11 +1,12 @@
 import styles from './App.module.scss';
+import HeaderOffer from './components/HeaderOffer/HeaderOffer';
 
-function App() {
+const App = () => {
   return (
     <div className={styles.App}>
-      dsadsa
+      <HeaderOffer />
     </div>
   );
-}
+};
 
 export default App;

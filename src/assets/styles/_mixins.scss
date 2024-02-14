@@ -11,11 +11,11 @@
   }
 }
 
-@mixin fontSet($fontFamily: $mainTextFont, $fontSize: $fs-14, $fontWeight: $fw-400, $lineHeight: normal, $fontStyle: normal) {
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  line-height: $lineHeight;
+@mixin fontSet($ff: $mainTextFont, $fs: $fs-14, $fw: $fw-Regular, $lh: normal, $fontStyle: normal) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
   font-style: $fontStyle;
 }
 
