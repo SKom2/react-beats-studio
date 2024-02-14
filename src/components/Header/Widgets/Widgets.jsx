@@ -1,8 +1,8 @@
 import styles from './Widget.module.scss';
 
-import BatteryIcon from '../../assets/images/BateryIcon.svg';
-import GraphIcon from '../../assets/images/GraphIcon.svg';
-import MicrophoneIcon from '../../assets/images/MicrophonIcon.svg';
+import BatteryIcon from '../../../assets/images/BateryIcon.svg';
+import GraphIcon from '../../../assets/images/GraphIcon.svg';
+import MicrophoneIcon from '../../../assets/images/MicrophonIcon.svg';
 import Widget from '../Widget/Widget';
 
 const widgetsInformation = [
