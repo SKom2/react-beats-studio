@@ -14,7 +14,7 @@ import WheatImg3 from '../assets/images/sliderImages/Wheat3.png';
 const sliderData = [
   {
     id: 1,
-    color: '#ADACB1',
+    color: '#282828',
     selectors: [
       { image: BlackImg1, alt: 'Black Selector Image 1' },
       { image: BlackImg2, alt: 'Black Selector Image 2' },
@@ -23,7 +23,7 @@ const sliderData = [
   },
   {
     id: 2,
-    color: '#282828',
+    color: '#ADACB1',
     selectors: [
       { image: GreyImg1, alt: 'Grey Selector Image 1' },
       { image: GreyImg2, alt: 'Grey Selector Image 2' },
