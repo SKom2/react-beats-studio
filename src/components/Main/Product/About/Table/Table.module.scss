@@ -1,0 +1,27 @@
+@import "../../../../../assets/styles/global";
+
+.table {
+  margin-top: 4px;
+  width: 100%;
+  border-collapse: collapse;
+
+  &__column{
+    padding: 0 0 8px;
+  }
+
+  &__columnHeading{
+    padding-top: 12px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    @include fontSet($ff: $headingsFont, $fs: $fs-14, $fw: $fw-Bold);
+  }
+
+  &__columnTitle{
+    width: 180px;
+    @include fontSet($fs: $fs-14, $fw: $fw-Medium);
+  }
+
+  &__columnText{
+    @include fontSet($fs: $fs-14);
+  }
+}

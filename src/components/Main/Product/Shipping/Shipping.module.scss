@@ -1,0 +1,95 @@
+@import "../../../../assets/styles/global";
+
+.shipping{
+  padding: 15px;
+  margin-top: 24px;
+  @include borderSetting(1px solid #626262, 30px);
+
+  &__header{
+    @include displaySettings($justify: space-between);
+  }
+
+
+  &__heading{
+    @include displaySettings();
+    gap: 10px;
+  }
+
+  &__icon{
+    @include size(28px, 28px);
+  }
+
+  &__title{
+    text-transform: uppercase;
+    @include fontSet($ff: $headingsFont, $fs: $fs-14, $fw: $fw-Bold);
+    margin: 0;
+    padding: 0;
+  }
+
+  &__toggleBtn{
+    outline: none;
+    @include borderSetting(1px solid #626262, 50%);
+    background-color: $primeText;
+    @include size(30px, 30px);
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__toggleBtnState{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    @include size(16px, 16px);
+    @include transitionSetting();
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $globalWhite;
+      transform: translateY(-50%);
+      border-radius: 30px;
+    }
+
+    &::after{
+      content: '';
+      background-color: $globalWhite;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      border-radius: 30px;
+      transform: translateX(-50%);
+      @include transitionSetting();
+    }
+
+    &_opened{
+
+      &::after{
+        content: '';
+        opacity: 0;
+      }
+    }
+  }
+
+  &__text{
+    opacity: 1;
+    overflow: hidden;
+    @include fontSet($fs: $fs-14);
+    margin: 20px 0 0;
+    height: 72px;
+    @include transitionSetting();
+
+    &_hidden{
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      @include transitionSetting();
+    }
+  }
+}

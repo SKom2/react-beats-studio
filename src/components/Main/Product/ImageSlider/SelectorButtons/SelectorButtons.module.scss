@@ -1,0 +1,33 @@
+@import "../../../../../assets/styles/global";
+
+.selectors{
+  list-style-type: none;
+  @include displaySettings($justify: space-between);
+  margin: 8px 0 0;
+  padding: 0;
+
+  &__item{
+    margin: 0;
+    padding: 0;
+    max-height: 116px;
+  }
+
+  &__button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    max-height: 116px;
+    cursor: pointer;
+
+    &_active{
+      border-radius: 30px;
+      outline: 1px solid $arrowsBg;
+    }
+  }
+
+  &__image{
+    max-height: 116px;
+  }
+}

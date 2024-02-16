@@ -1,0 +1,28 @@
+@import "../../../../../../assets/styles/global";
+
+.offer{
+  &__heading {
+    @include displaySettings($justify: start);
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  &__icon{
+    @include size(24px, 24px);
+    padding: 8px;
+    @include borderSetting(1px solid $primeText, 12px);
+  }
+
+  &__title{
+    text-transform: uppercase;
+    @include fontSet($ff: $headingsFont, $fs: $fs-14, $fw: $fw-Bold);
+    margin: 0;
+    padding: 0;
+  }
+
+  &__subtitle{
+    @include fontSet($fs: $fs-14);
+    margin: 0;
+    padding: 0;
+  }
+}
