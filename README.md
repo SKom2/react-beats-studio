@@ -1,4 +1,7 @@
-# React Beats Studio Buds Page. Test task.
+# Simple React Beats Studio Single-Page. Test task.
+
+![Beats Studio](https://github.com/SKom2/react-beats-studio/assets/103752057/9d1c6228-2929-4d5d-ae62-f61f5e9f08d6)
+
 
 React-based single-page application that showcases the Beats Studio Buds product. Adaptive only for mobile devices. 
 
