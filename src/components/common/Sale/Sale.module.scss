@@ -1,0 +1,21 @@
+@import "../../../assets/styles/global";
+
+.sale{
+  margin-top: 24px;
+  @include displaySettings();
+
+  &__price_first, &__price_second{
+    margin: 0;
+  }
+
+  &__price_first{
+    opacity: .8;
+    @include fontSet($ff: $headingsFont, $fs: $fs-18, $fw: $fw-Black, $lh: 18px);
+    text-decoration: line-through;
+  }
+
+  &__price_second{
+    height: 48px;
+    @include fontSet($ff: $headingsFont, $fs: $fs-40, $fw: $fw-Black, $lh: 40px);
+  }
+}

@@ -4,6 +4,10 @@
   @include displaySettings($justify: space-between);
   padding: 16px 12px 0;
 
+  &__link{
+    max-height: 32px;
+  }
+
   &__logo{
     width: 32px;
     height: 32px;

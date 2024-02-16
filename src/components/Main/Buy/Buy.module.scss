@@ -1,0 +1,49 @@
+@import "../../../assets/styles/global";
+
+.buy{
+
+  &__title{
+    @include fontSet($ff: $headingsFont, $fs: $fs-32, $fw: $fw-Bold);
+    margin: 24px 0 4px;
+    padding: 0;
+  }
+
+  &__subtitle{
+    @include fontSet($fs: $fs-14, $fw: $fw-Medium);
+    margin: 0 0 12px;
+    padding: 0;
+    color: $primeText;
+  }
+
+  &__sale{
+    justify-content: start;
+    gap: 8px;
+    margin-bottom: 12px;
+
+    &_off{
+      background-image: linear-gradient(to right, #69B1C9, #6081C3, #5558AF);
+      padding: 4px 10px;
+      border-radius: 40px;
+      @include fontSet($ff: $headingsFont, $fs: $fs-20, $fw: $fw-Bold);
+      color: $globalWhite;
+    }
+  }
+
+  &__button{
+    cursor: pointer;
+    margin-top: 12px;
+    width: 100%;
+    outline: none;
+    border: none;
+    @include theme($bg: $primeText, $color: $globalWhite);
+    padding: 14.5px 0;
+    border-radius: 40px;
+    text-transform: uppercase;
+    @include fontSet($ff: $headingsFont, $fs: $fs-20, $fw: $fw-ExtraBlack);
+    @include transitionSetting();
+
+    &:hover{
+      opacity: .8;
+    }
+  }
+}

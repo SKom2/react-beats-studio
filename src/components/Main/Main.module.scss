@@ -1,0 +1,6 @@
+@import "../../assets/styles/global";
+
+.main{
+  @include theme($color: $globalBlack);
+  padding: 0 10px 53px;
+}

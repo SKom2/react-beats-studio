@@ -1,0 +1,17 @@
+@import "../../../assets/styles/global";
+
+.imageSlider{
+
+
+  &__list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 370px;
+    border-radius: 30px;
+    outline: 1px solid $arrowsBg;
+  }
+
+
+}

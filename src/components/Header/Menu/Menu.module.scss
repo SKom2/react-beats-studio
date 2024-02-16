@@ -13,5 +13,10 @@
     color: $globalWhite;
     opacity: .7;
     text-decoration: none;
+    @include transitionSetting();
+
+    &:hover{
+      opacity: 1;
+    }
   }
 }

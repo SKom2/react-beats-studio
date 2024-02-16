@@ -1,6 +1,6 @@
 import styles from './Menu.module.scss';
 
-const menuItems = ['About Product', 'Reviews', 'Reviews'];
+const menuItems = ['About Product', 'Reviews', 'Contact Us'];
 
 const Menu = () => {
   return (
