@@ -12,7 +12,7 @@ To run this project locally, clone the repository and install the dependencies:
 
 ## Hosting
 
-The project is hosted on Netlify. You can access the live version of the application by following this link: [Beats Studio](https://main--deluxe-torrone-f51604.netlify.app/)).
+The project is hosted on Netlify. You can access the live version of the application by following this link: [Beats Studio](https://main--deluxe-torrone-f51604.netlify.app/)
 
 ```bash
 git clone [https://github.com/SKom2/react-beats-studio.git]
